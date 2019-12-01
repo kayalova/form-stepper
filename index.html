@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Stepper</title>
+</head>
+
+<body>
+    <div class="page">
+        <h1 class="title">Simple form stepper</h1>
+        <div class="form__wrapper">
+            <form action="" class="form form__active">
+                <mark>1 / 3</mark>
+                <input type="text" placeholder="hello" class="text-field">
+                <input type="text" placeholder="how are u" class="text-field">
+                <input type="text" placeholder="print ur name" class="text-field">
+                <textarea name="" id="" cols="30" rows="10" class="text-field textarea"
+                    placeholder="share something"></textarea>
+            </form>
+
+            <form action="" class="form">
+                <mark>2 / 3</mark>
+                <input type="text" placeholder="and ur number" class="text-field">
+                <input type="text" placeholder="and ur cats name" class="text-field">
+                <input type="text" placeholder="and something else" class="text-field">
+            </form>
+
+            <form action="" class="form">
+                <mark>3 / 3</mark>
+                <input type="text" placeholder="and something" class="text-field">
+                <input type="text" placeholder="important" class="text-field">
+                <input type="text" placeholder="really important" class="text-field">
+            </form>
+        </div>
+
+        <div class="btn__wrapper">
+            <button class="btn disabled" id="prev">Prev</button>
+            <button class="btn" id="next">Next</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.page {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: slategrey;
+}
+
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mark {
+    font-weight: 700;
+    color: #777;
+}
+
+.btn__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.form {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.form__active {
+    display: flex;
+}
+
+.textarea {
+    resize: none;
+}
+
+.text-field {
+    font-family: monospace;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid rgb(221, 217, 228);
+    background-color: #fcfcfc;
+    transition: .4s;
+    outline: none;
+}
+
+.text-field:focus {
+    background-color: #fff;
+    border-color: rgb(200, 180, 231);
+}
+
+.text-field:last-child {
+    margin-bottom: 0;
+}
+
+.btn:first-child {
+    margin-right: 15px;
+}
+
+.btn {
+    width: 66px;
+    height: 35px;
+    background-color: rgba(179, 163, 250, .2);
+    border: 1px solid #b1a1fa;
+    font-size: 13px;
+    border-radius: 15px;
+    outline: none;
+    color: rgb(39, 46, 68);
+    cursor: pointer;
+    transition: .4s;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.disabled {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.disabled:hover {
+    background-color: #ddd;
+    cursor: default;
+}
