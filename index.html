@@ -6,43 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/style.css">
+    <link rel="stylesheet" href="build/css/style.css">
     <title>Form Stepper</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <div class="page">
         <h1 class="title">Simple form stepper</h1>
-        <div class="form__wrapper">
+        <div class="form-wrapper">
             <form action="" class="form form__active">
                 <mark>1 / 3</mark>
-                <input type="text" placeholder="hello" class="text-field">
-                <input type="text" placeholder="how are u" class="text-field">
-                <input type="text" placeholder="print ur name" class="text-field">
-                <textarea name="" id="" cols="30" rows="10" class="text-field textarea"
-                    placeholder="share something"></textarea>
+                <input type="text" placeholder="hello" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <input type="text" placeholder="how are u" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <input type="text" placeholder="print ur name" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <textarea name="" id="" cols="30" rows="10" class="text-field textarea" placeholder="share something"
+                    required></textarea>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
             </form>
 
             <form action="" class="form">
                 <mark>2 / 3</mark>
-                <input type="text" placeholder="and ur number" class="text-field">
-                <input type="text" placeholder="and ur cats name" class="text-field">
-                <input type="text" placeholder="and something else" class="text-field">
+                <input type="text" placeholder="and ur number" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <input type="text" placeholder="and ur cats name" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <input type="text" placeholder="and something else" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
             </form>
 
             <form action="" class="form">
                 <mark>3 / 3</mark>
-                <input type="text" placeholder="and something" class="text-field">
-                <input type="text" placeholder="important" class="text-field">
-                <input type="text" placeholder="really important" class="text-field">
+                <input type="text" placeholder="and something" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <input type="text" placeholder="important" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <input type="text" placeholder="really important" class="text-field" required>
+                <span class="error transparent">Заполните, пожалуйста, это поле</span>
+                <label for="agree" class="agree-label">
+                    <input type="checkbox" id="agree" required> I solemnly swear that I am up to no good
+                    <span class="error error-checkbox transparent">Необходимо Ваше согласие</span>
+                </label>
             </form>
         </div>
 
-        <div class="btn__wrapper">
+        <div class="success-container hidden">
+            <img src="build/images/parrot.jpeg" alt="Colorful tropical bird">
+            <p class="success__text">Thx for making this world a better place</p>
+        </div>
+
+        <div class="btn-wrapper">
             <button class="btn disabled" id="prev">Prev</button>
             <button class="btn" id="next">Next</button>
+            <button class="btn hidden" id="send">Send</button>
         </div>
     </div>
+
+    <script src="build/js/index.js"></script>
 </body>
 
 </html>
